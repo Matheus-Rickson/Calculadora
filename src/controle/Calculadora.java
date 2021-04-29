@@ -1,6 +1,4 @@
-package calculos;
-
-import Auxiliares.Leitura;
+package controle;
 
 public class Calculadora {
 
@@ -56,7 +54,7 @@ public class Calculadora {
 	public void tabuada() {
 
 		int numero, conta = 0;
-		System.out.println("Informe o número pra receber a tabuada: ");
+		System.out.println("Informe o nï¿½mero pra receber a tabuada: ");
 		numero = Leitura.lerInt();
 
 		System.out.println("--------------------------");

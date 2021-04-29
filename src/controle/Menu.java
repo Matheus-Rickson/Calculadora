@@ -1,9 +1,6 @@
-package Menu;
+package controle;
 
 import java.text.DecimalFormat;
-
-import Auxiliares.Leitura;
-import calculos.Calculadora;
 
 public class Menu {
 
@@ -22,7 +19,7 @@ public class Menu {
 		do {
 
 			System.out.println("------------Menu------------");
-			System.out.println("- 1 - Operações básicas    -");
+			System.out.println("- 1 - Operaï¿½ï¿½es bï¿½sicas    -");
 			System.out.println("- 2 - Tabuada              -");
 			System.out.println("- 3 - Juros Composto       -");
 			System.out.println("- 4 - Conversores          -");
@@ -34,7 +31,6 @@ public class Menu {
 			switch (opcao) {
 			case 1:
 				operacoesBasicas();
-
 				break;
 			case 2:
 				cl.tabuada();
@@ -48,23 +44,23 @@ public class Menu {
 			case 0:
 				return;
 			default:
-				System.out.println("Opção inválida");
+				System.out.println("Opï¿½ï¿½o invï¿½lida");
 
 			}
 			System.out.println("\n\n\n\n");
 		} while (opcao != 0);
 	}
 
-	// INICIO DO BLOCO DE OPERAÇÕES BÁSICAS
+	// INICIO DO BLOCO DE OPERAï¿½ï¿½ES Bï¿½SICAS
 	public void operacoesBasicas() {
 		int userDoUser = 0;
 
 		do {
-			System.out.println("------OperaçõesBásicas------");
-			System.out.println("- 1 - Adição               -");
-			System.out.println("- 2 - Subtração            -");
-			System.out.println("- 3 - Multiplicação        -");
-			System.out.println("- 4 - Divisão              -");
+			System.out.println("------Operaï¿½ï¿½esBï¿½sicas------");
+			System.out.println("- 1 - Adiï¿½ï¿½o               -");
+			System.out.println("- 2 - Subtraï¿½ï¿½o            -");
+			System.out.println("- 3 - Multiplicaï¿½ï¿½o        -");
+			System.out.println("- 4 - Divisï¿½o              -");
 			System.out.println("- 0 - Voltar               -");
 			System.out.println("----------------------------");
 			userDoUser = Leitura.lerInt();
@@ -88,21 +84,21 @@ public class Menu {
 			case 0:
 				return;
 			default:
-				System.out.println("Opção inválida");
+				System.out.println("Opï¿½ï¿½o invï¿½lida");
 				break;
 			}
 
 		} while (userDoUser != 0);
 	}
 
-	// FIM DO BLOCO DE OPERAÇÕES BÁSICAS
+	// FIM DO BLOCO DE OPERAï¿½ï¿½ES Bï¿½SICAS
 
 	public void conversores() {
 		int conversor = 0;
 
 		do {
 
-			System.out.println("------OperaçõesBásicas------");
+			System.out.println("------Operaï¿½ï¿½esBï¿½sicas------");
 			System.out.println("- 1 -Mi para Km            -");
 			System.out.println("- 2 - Km para Mi           -");
 			System.out.println("- 0 - Voltar               -");
@@ -111,13 +107,13 @@ public class Menu {
 
 			switch (conversor) {
 			case 1:
-				printFormatado("A velocidade em KM é: ", cl.milhasPraQuilometros());
+				printFormatado("A velocidade em KM ï¿½: ", cl.milhasPraQuilometros());
 				break;
 			case 2:
-				printFormatado("A velocidade em MI é: ", cl.quilometrosPraMilhas());
+				printFormatado("A velocidade em MI ï¿½: ", cl.quilometrosPraMilhas());
 				break;
 			default:
-				System.out.println("Opção inválida");
+				System.out.println("Opï¿½ï¿½o invï¿½lida");
 
 				break;
 			}

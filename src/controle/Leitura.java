@@ -1,4 +1,4 @@
-package Auxiliares;
+package controle;
 
 import java.util.Scanner;
 @SuppressWarnings("resource")
@@ -34,4 +34,4 @@ public abstract class Leitura {
 
 }
 
-// Essa classe evita os buffers que por ventura são gerados pelo teclado.
+// Essa classe evita os buffers que por ventura sï¿½o gerados pelo teclado.
